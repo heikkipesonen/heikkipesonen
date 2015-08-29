@@ -1,0 +1,97 @@
+.page-title{
+	padding-top: 150px;
+	padding-bottom: 100px;
+}
+
+.page-title-header{
+	margin-bottom: 42px;
+}
+
+.list-item{
+	position: relative;
+	padding:0;
+
+	.list-item-row{
+		position: relative;
+		white-space: nowrap;
+	}
+}
+
+
+$big-list-item-title-width: 72px;
+$big-list-left: 250px;
+
+.big-list{
+	list-style-type: none;
+	padding:0;
+
+	.list-item-row{
+		line-height: 20pt;
+	}
+
+	.list-item{
+		padding-bottom: 50px;
+		padding-top: 50px;
+		padding-left: $big-list-left;
+
+	}
+
+	.list-item-title{
+		display: inline-block;
+		position: relative;
+		padding-bottom: 10px;
+	}
+
+	.list-item-title:after{
+		position: absolute;
+		box-sizing: initial;
+		top:100%;
+		left: - $big-list-left + $big-list-item-title-width + 20;
+		padding-left: $big-list-left - $big-list-item-title-width;
+		content : "";
+		width: 100%;
+		height: 1px;
+		background-color: black;
+	}
+}
+
+.view-light .big-list .list-item-title:after{
+	background-color: white;
+}
+
+.menu-item-circle{
+
+}
+
+.big-list-item-title{
+	position: absolute;
+	top: 100%;
+	margin: -$big-list-item-title-width / 2 0 0 0;
+	left:-$big-list-left;
+}
+
+
+
+
+@media all and (max-width: 900px){
+	.big-list{
+		.list-item{
+			padding-left: 0;
+			padding-top: 25px;
+			padding-bottom: 25px;
+		}
+
+		.list-item-title{
+			display: block;
+			text-align: center;
+
+			&:after{
+				display: none;
+			}
+		}
+
+		.big-list-item-title{
+			display: none;
+		}
+	}
+}

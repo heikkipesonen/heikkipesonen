@@ -1,0 +1,53 @@
+<div class="view view-light" scroll-y name="curriculum-vitae">
+	<div class="col-xs-12 page-wrapper">
+
+		<section class="page-title text-center">
+			<h2 class="page-title-header text-uppercase">Curriculum vitae</h2>
+			<p class="page-title-text">Lyhyt kooste tekemistäni töistä, käymistäni kouluista, sekä hankkimistani taidoista</p>
+		</section>
+
+		<section class="cv col-xs-12 col-md-10 col-lg-6 col-md-offset-1 col-lg-offset-3">
+			<ul class="big-list">
+				<li class="list-item"
+					ng-class="{'list-item-row-{{::listItem.type}}' : true}"
+					ng-repeat="(itemIndex, listItem) in cv.listItems track by itemIndex">
+
+					<h3 class="list-item-title text-uppercase">
+						<span class="nav-item big-list-item-title" ng-bind="::listItem.slug"></span>
+						{{::listItem.title}}
+					</h3>
+
+					<div ng-if="listItem.description">
+						<p ng-repeat="(descriptionIndex, description) in listItem.description track by descriptionIndex"
+							ng-bind="::description"></p>
+					</div>
+
+
+
+					<div
+					class="list-item-content">
+
+					<div class="list-item-row"
+					ng-class="{'list-item-col-{{::item.length}}' : true}"
+					ng-repeat="(itemIndex, item) in ::listItem.items track by itemIndex">
+					<span
+						ng-if="listItem.type === 'list'"
+						class="list-item-{{listItemIndex+1}}"
+						ng-repeat="(listItemIndex, listRowItem) in ::item track by listItemIndex"
+						ng-bind="listRowItem"></span>
+
+					<circle-chart
+						ng-if="listItem.type === 'graph'"
+						class="graph-bar"
+						label="::item.name"
+						ng-model="item.value">
+					</circle-chart>
+
+					</div>
+
+					</div>
+				</li>
+			</ul>
+		</section>
+	</div>
+</div>

@@ -11,6 +11,39 @@ $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bo
  */
 // bower:scss
 // endbower
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,900);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,900,700);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+$title-color : #3b3b3b;
+
+html, body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 10pt;
+	background-color: white;
+}
+
+p{
+	font-family: 'Playfair Display', serif;
+	font-size: 1.1rem;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+
+
+	&:hover{
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+h1,h2,h3,h4,.title {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+}
+
 
 .browsehappy {
   margin: 0.2em 0;
@@ -26,6 +59,38 @@ $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bo
     width: 50px;
   }
 }
+
+[view], .view{
+	position: absolute;
+	top:0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.view-light{
+	color: white;
+}
+
+.view-frame{
+	background-color: white;
+	left: 20%;
+	width: 80%;
+	box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.6);
+
+	@media all and (max-width: 1025px){
+		box-shadow: none;
+		width: 100%;
+		left:0;
+	}
+}
+
+[scroll-y]{
+	overflow: hidden;
+	overflow-y: auto;
+}
+
 
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject

@@ -6,9 +6,15 @@
     .run(runBlock);
 
   /** @ngInject */
-  function runBlock($log) {
+  function runBlock($rootScope, $state) {
 
-    $log.debug('runBlock end');
+    $rootScope.$on('$stateChangeSuccess', function () {
+    	if ($state.current.name === 'main'){
+    		$rootScope.subViewVisible = false;
+    	} else {
+    		$rootScope.subViewVisible = true;
+    	}
+    })
   }
 
 })();

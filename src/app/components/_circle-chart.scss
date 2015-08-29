@@ -1,0 +1,56 @@
+$circle-chart-size: 73px;
+$circle-chart-thickness: 8px;
+$circle-chart-color: white;
+$circle-chart-hover-color: rgb(200,200,200);
+
+svg{
+	&:hover, &:active, &:focus{
+		outline: none;
+	}
+}
+
+.circle-chart{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+
+	label{
+		font-size: 1rem;
+		font-weight: 100;
+		display: block;
+	}
+
+	svg{
+		display: inline-block;
+		width: $circle-chart-size;
+		height: $circle-chart-size;
+	}
+
+	path, circle, label{
+		transition: 0.4s;
+	}
+
+
+	path{
+		stroke: $circle-chart-color;
+	}
+
+	circle{
+		stroke: fade_out($circle-chart-color, 0.7);
+	}
+
+
+	&:hover{
+		label{
+			color: $circle-chart-hover-color;
+		}
+
+		path {
+			stroke: $circle-chart-hover-color;
+		}
+
+		circle{
+			stroke : fade-out($circle-chart-hover-color, 0.7);
+		}
+	}
+}

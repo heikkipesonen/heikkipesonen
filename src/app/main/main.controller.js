@@ -6,8 +6,8 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($timeout) {
+  function MainController($timeout, $rootScope) {
     var vm = this;
-
+console.log($rootScope.subViewVisible)
   }
 })();

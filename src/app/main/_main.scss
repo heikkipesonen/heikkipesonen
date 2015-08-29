@@ -1,0 +1,137 @@
+
+$nav-color: #D4461E;
+$nav-width: 400px;
+$logo-width: 225px;
+$nav-height: 40%;
+$nav-logo-margin: 5%;
+$nav-text: #DEDEDE;
+$nav-hilight-color: #40DAE2;
+
+$nav-item-count: 3;
+$nav-item-width: 72px;
+
+
+.animate{
+	transition-duration: 0.4s;
+}
+
+.main-logo{
+	position: absolute;
+	bottom: $nav-height + $nav-logo-margin;
+	left: 50%;
+	width: $logo-width;
+	margin-left: -$logo-width / 2;
+}
+
+.main-nav{
+	position: absolute;
+	bottom: 0;
+	height: $nav-height;
+	width: $nav-width;
+	left: 50%;
+	margin-left: -$nav-width/2;
+	border-color:  white;
+}
+
+.nav-item{
+	@extend .animate;
+
+	font-weight: 200;
+	border: 1px solid;
+	text-align: center;
+
+	display: inline-block;
+	position: relative;
+	width: $nav-item-width;
+	height: $nav-item-width;
+	line-height: $nav-item-width - 2px;
+	margin: 10px;
+
+	// background-image: url('../assets/main-menu.png');
+	// background-repeat: no-repeat;
+	// background-size: auto 100%;
+	// background-position: 0 0;
+	border-radius: 50%;
+	color: white;
+	border: 1px solid;
+
+	&.dark{
+		color: black;
+	}
+
+	// @for $childCounter from 1 through $nav-item-count {
+	// 	&:nth-child(#{$childCounter}){
+	// 		background-position: -$nav-item-width * ($childCounter - 1) 0;
+	// 	}
+	// }
+}
+
+a .nav-item, a.nav-item, .nav-item[href]{
+	cursor: pointer;
+	&:hover{
+		background-color: rgba(255,255,255,0.5);
+	}
+}
+
+[image-loader].main-bg-overlay, [image-loader].main-bg-overlay.image-ready{
+	position: absolute;
+	top:0;
+	left:0;
+	bottom: 0;
+	right: 0;
+	background-size: cover;
+	opacity:0;
+	@extend .animate;
+}
+
+
+.main-view.view-as-background{
+	.main-bg-overlay{
+		opacity:1;
+	}
+
+	.main-logo, .main-nav{
+		opacity: 0;
+	}
+}
+
+.nav-item[title]:after{
+	content: attr(title);
+	position: absolute;
+	left:50%;
+	top: 140%;
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-size: 10pt;
+	font-weight: 100;
+	left: 0;
+	text-transform: uppercase;
+	opacity:0;
+	line-height: 12pt;
+	@extend .animate;
+}
+
+.nav-item.dark[title]:after{
+	color: black;
+}
+
+.nav-item[title]:before{
+	@extend .animate;
+	content: "";
+	position: absolute;
+	top:110%;
+	left:50%;
+	height: 20%;
+	width: 1px;
+	background-color: white;
+	opacity:0;
+}
+
+.nav-item.dark[title]:before{
+	background-color: black;
+}
+
+.nav-item:hover:after, .nav-item:hover:before{
+	opacity:1;
+}
