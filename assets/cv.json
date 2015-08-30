@@ -1,0 +1,136 @@
+{
+	"category":"cv",
+	"items":[
+		{
+			"slug":"ME",
+			"type":"list",
+			"title":"Henkilötiedot",
+			"items":[
+				["Syntynyt","23.10.1981 Pohjois-Karjala"],
+				["Naimisissa","Kyllä"],
+				["Lapsi","On"],
+				["Vantaa","Toistaiseksi"],
+				["Pyssypalvelus", "Ohi on"]
+			]
+		},
+		{
+			"slug":"CN",
+			"type":"list",
+			"title":"Yhteystiedot",
+			"items":[
+				["Puhelin","0503554763"],
+				["Sähköposti","pesonen.heikki@gmail.com"]
+			]
+		},
+		{
+			"slug":"WR",
+			"type":"list",
+			"title":"Työhistoria",
+			"description":["Työhistoriani ei ole ehkä se tavanomaisin, roskakuskista koodariksi, koodarista vielä johonkin...", "Web-kehityksen parissa työskentelyn aloitin metropolian ammattikorkeakoulussa tutkimusavustajana eri projekteissa, sitä ennen toimin mm. kuorma-auton sekä pikkubussin kuljettajana pk-seudulla"],
+			"items":[
+				["10.2013 -","Luotta Oy","Front-end developer"],
+				["1.2013 - 9.2013","Metropolia AMK", "Tutkimusavustaja"],
+				["5.2012 - 1.2013","Metropolia AMK", "Tutkimusavustaja"],
+				["3.2007 - 2013","Kuljetus OY Jussi", "Kuorma-auton kuljettaja"],
+				["9.2006 - 3.2007","UHJ OY", "Jakeluauton kuljettaja"],
+				["7.2006 - 9.2006","Muuttomiehet K. Niskanen OY", "Kuorma-auton kuljettaja, muuttomies"]
+			]
+		},
+		{
+			"slug":"ED",
+			"type":"list",
+			"title":"Koulutus",
+			"items":[
+				["2010 -","Metropolia AMK","Mediatekniikan insinööri (lähes inssityötä vaille)"],
+				["2004 - 2006","Mikkeli AMK", "Puumuotoilun koulutusohjelma (artenomi) (kesekeytetty)"],
+				["1998 - 2002","Enon Lukio", "Ylioppilastutkinto"]
+			]
+		},
+		{
+			"slug":"SK",
+			"title":"Taidot",
+			"description":["Työssäni käytän ohjelmointikielenä pääasiassa javascriptia, useimmiten fronttistäkiksi on viimeisen puolentoista vuoden ajan valikoitunut HTML5, Sass + AngularJS + Gulp / Grunt setti, toisinaan asiakkaan tai jonkun muun vaatimuksista johtuen tukeudutaan wordpress + php + mysql komboon. Joskus on jopa tukeuduttu drupaliin...",
+
+			 "Alla oma arvio omista vahvuuksistani eri tekniikoiden osalta"],
+			"type":"graph",
+			"items":[
+				{
+					"name":"Javascript",
+					"value":95
+				},
+				{
+					"name":"AngularJS",
+					"value":95
+				},
+				{
+					"name":"HTML5",
+					"value":90
+				},
+				{
+					"name":"CSS",
+					"value":85
+				},
+				{
+					"name":"Sass",
+					"value":80
+				},
+				{
+					"name":"PHP",
+					"value":80
+				},
+				{
+					"name":"MySQL",
+					"value":90
+				},
+				{
+					"name":"Java",
+					"value":15
+				},
+				{
+					"name":"Android SDK",
+					"value":20
+				},
+				{
+					"name":"WordPress",
+					"value":75
+				},
+				{
+					"name":"NodeJS",
+					"value":25
+				},
+				{
+					"name":"Gulp",
+					"value":45
+				},
+				{
+					"name":"Grunt",
+					"value":55
+				},
+				{
+					"name":"Ionic framework",
+					"value":60
+				},
+				{
+					"name":"Phonegap",
+					"value":75
+				},
+				{
+					"name":"Photoshop",
+					"value":60
+				},
+				{
+					"name":"3DSMax",
+					"value":50
+				},
+				{
+					"name":"Premiere",
+					"value":38
+				},
+				{
+					"name":"After effects",
+					"value":28
+				}
+			]
+		}
+	]
+}
