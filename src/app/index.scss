@@ -2,6 +2,7 @@
  *  If you want to override some bootstrap variables, you have to change values here.
  *  The list of variables are listed here bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss
  */
+$grid-gutter-width: 15px;
 $navbar-inverse-link-color: #5AADBB;
 $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 
@@ -87,6 +88,7 @@ h1,h2,h3,h4,.title {
 }
 
 [scroll-y]{
+	height: 100%;
 	overflow: hidden;
 	overflow-y: auto;
 }

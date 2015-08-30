@@ -3,10 +3,15 @@
 
   angular
     .module('portfolio2')
-    .controller('PortfoioController', PortfoioController);
+    .controller('PortfolioController', PortfolioController);
 
   /** @ngInject */
-  function PortfoioController () {
+  function PortfolioController ($http) {
     var vm = this;
+    vm.gallery = [];
+
+    $http.get('assets/portfolio/portfolio.json').then(function (response) {
+      vm.gallery = response.data;
+    });
   }
 })();

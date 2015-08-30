@@ -7,9 +7,10 @@
 			"title":"Henkilötiedot",
 			"items":[
 				["Syntynyt","23.10.1981 Pohjois-Karjala"],
-				["Naimisissa"],
-				["Lapsi"],
-				["Vantaa"]
+				["Naimisissa","Kyllä"],
+				["Lapsi","On"],
+				["Vantaa","Toistaiseksi"],
+				["Pyssypalvelus", "Ohi on"]
 			]
 		},
 		{
@@ -25,7 +26,7 @@
 			"slug":"WR",
 			"type":"list",
 			"title":"Työhistoria",
-			"description":["Työhistoriani on varsin kirjavaa, alla listattuna viimeisimmät työpaikat joissa olen ollut.", "Web-kehityksen parissa työskentelyn aloitin metropolian ammattikorkeakoulussa tutkimusavustajana eri projekteissa, sitä ennen toimin mm. kuorma-auton sekä pikkubussin kuljettaja pk-seudulla"],
+			"description":["Työhistoriani ei ole ehkä se tavanomaisin, roskakuskista koodariksi, koodarista vielä johonkin...", "Web-kehityksen parissa työskentelyn aloitin metropolian ammattikorkeakoulussa tutkimusavustajana eri projekteissa, sitä ennen toimin mm. kuorma-auton sekä pikkubussin kuljettajana pk-seudulla"],
 			"items":[
 				["10.2013 -","Luotta Oy","Front-end developer"],
 				["1.2013 - 9.2013","Metropolia AMK", "Tutkimusavustaja"],
@@ -95,7 +96,7 @@
 				},
 				{
 					"name":"NodeJS",
-					"value":5
+					"value":25
 				},
 				{
 					"name":"Gulp",

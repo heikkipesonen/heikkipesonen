@@ -1,18 +1,18 @@
-<div class="view view-light" scroll-y name="curriculum-vitae">
+<div class="view" name="curriculum-vitae"  scroll-y image-loader="'assets/bg-blur-color.jpg'">
 	<div class="col-xs-12 page-wrapper">
 
-		<section class="page-title text-center">
+		<section class="page-title text-center col-xs-12">
 			<h2 class="page-title-header text-uppercase">Curriculum vitae</h2>
 		</section>
 
-		<section class="cv col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+		<section class="cv col-xs-12 col-md-10 col-lg-8 col-lg-offset-2 col-md-offset-1">
 			<ul class="big-list">
 				<li class="list-item"
 					ng-class="{'list-item-row-{{::listItem.type}}' : true}"
 					ng-repeat="(itemIndex, listItem) in cv.listItems track by itemIndex">
 
 					<h3 class="list-item-title text-uppercase">
-						<span class="nav-item big-list-item-title" ng-bind="::listItem.slug"></span>
+						<span class="nav-item dark big-list-item-title" ng-bind="::listItem.slug"></span>
 						{{::listItem.title}}
 					</h3>
 

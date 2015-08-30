@@ -21,6 +21,13 @@
         controller: 'CvController',
         controllerAs: 'cv'
       })
+
+      .state('main.pf', {
+        url: 'portfolio',
+        templateUrl: 'app/portfolio/portfolio.html',
+        controller: 'PortfolioController',
+        controllerAs: 'portfolio'
+      })
       ;
 
     $urlRouterProvider.otherwise('/');

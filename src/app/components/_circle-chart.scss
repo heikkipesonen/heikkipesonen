@@ -1,7 +1,7 @@
 $circle-chart-size: 73px;
 $circle-chart-thickness: 8px;
-$circle-chart-color: white;
-$circle-chart-hover-color: rgb(200,200,200);
+$circle-chart-color: black;
+$circle-chart-hover-color: rgb(100,100,100);
 
 svg{
 	&:hover, &:active, &:focus{
