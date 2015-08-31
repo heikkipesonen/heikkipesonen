@@ -1,5 +1,5 @@
 /**
- * directive for drawing simple svg rount pie-kind linechart with one sector
+ * directive for drawing simple svg round pie-kind linechart with one sector
  * @example
  * <circle-chart ng-model="controller.number" min="-100" max="100"></circle-chart>
  */

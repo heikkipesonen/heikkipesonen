@@ -1,0 +1,106 @@
+$view-transition : 0.4s;
+
+.view-animate{
+	&.ng-animate{
+		transition: $view-transition !important;
+	}
+
+
+	&.ng-animate .view{
+		transition: $view-transition !important;
+	}
+
+	&.ng-enter .view{
+		opacity:0 !important;
+		z-index: 2;
+	}
+
+	&.ng-enter-active .view{
+		opacity:1 !important;
+	}
+
+	&.ng-leave-active .view{
+		opacity:1 !important;
+		z-index: 1;
+	}
+
+	&.ng-leave .view{
+		opacity:0 !important;
+		z-index: 1;
+	}
+}
+
+.animation-direction-back .view-animate{
+	&.ng-animate{
+		transition: $view-transition !important;
+	}
+
+	&.ng-enter{
+		transform: translate3d(-100%, 0,0) !important;
+		z-index: 2;
+	}
+
+	&.ng-enter-active{
+		transform: translate3d(0, 0,0) !important;
+	}
+
+	&.ng-leave-active{
+		transform: translate3d(0, 0,0) !important;
+		z-index: 1;
+	}
+
+	&.ng-leave{
+		transform: translate3d(100%, 0,0) !important;
+		z-index: 1;
+	}
+}
+
+.animation-direction-up .view-animate{
+	&.ng-animate{
+		transition: $view-transition !important;
+	}
+
+	&.ng-enter{
+		transform: translate3d(0,-100%,0) !important;
+		z-index: 2;
+	}
+
+	&.ng-enter-active{
+		transform: translate3d(0, 0,0) !important;
+	}
+
+	&.ng-leave-active{
+		transform: translate3d(0, 0,0) !important;
+		z-index: 1;
+	}
+
+	&.ng-leave{
+		transform: translate3d(0,100%,0) !important;
+		z-index: 1;
+	}
+}
+
+.animation-direction-down .view-animate{
+	&.ng-animate{
+		transition: $view-transition !important;
+	}
+
+	&.ng-enter{
+		transform: translate3d(0,100%,0) !important;
+		z-index: 2;
+	}
+
+	&.ng-enter-active{
+		transform: translate3d(0, 0,0) !important;
+	}
+
+	&.ng-leave-active{
+		transform: translate3d(0, 0,0) !important;
+		z-index: 1;
+	}
+
+	&.ng-leave{
+		transform: translate3d(0,-100%,0) !important;
+		z-index: 1;
+	}
+}

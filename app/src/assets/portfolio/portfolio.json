@@ -1,7 +1,7 @@
 [
 	{
 		"title":"Visit tampere",
-		"description":[],
+		"description":["Tampereen virallinen matkailuopas.","Syksy 2014"],
 		"tags":["AngularJS","NodeJS","Mobiili","Responsiivinen","Luotta"],
 		"thumbnail":"assets/portfolio/visit-tampere-thumbnail.jpg",
 		"items":[
@@ -25,7 +25,7 @@
 	},
 	{
 		"title":"Tikkurila Festivaali",
-		"description":[],
+		"description":["Tikkurila Festivaalien sivusto","Kevät 2014"],
 		"tags":["Wordpress","Javascript","PHP","Mobiili","Responsiivinen","Luotta"],
 		"thumbnail":"assets/portfolio/tikkurila-thumbnail.jpg",
 		"items":[
@@ -41,7 +41,7 @@
 	},
 	{
 		"title":"Toto.fi",
-		"description":[],
+		"description":["Toto.fi uusi ilme, frontend markup & styling","Kevät 2015"],
 		"tags":["Drupal","Javascript","PHP","Mobiili","Responsiivinen","Luotta"],
 		"thumbnail":"assets/portfolio/toto-thumbnail.jpg",
 		"items":[
@@ -57,7 +57,7 @@
 	},
 	{
 		"title":"Poltelehti.fi",
-		"description":[],
+		"description":["Vapon oma asiakaslehti","Syksy 2013"],
 		"tags":["PHP","Javascript","Mobiili","Responsiivinen","Luotta"],
 		"thumbnail":"assets/portfolio/polte-thumbnail.jpg",
 		"items":[
@@ -73,7 +73,7 @@
 	},
 	{
 		"title":"Onnella on Osoite",
-		"description":[],
+		"description":["Asokotien kampanjasivusto","Kevät 2015"],
 		"tags":["AngularJS","Javascript","Responsiivinen","Luotta"],
 		"thumbnail":"assets/portfolio/onnella-thumbnail.jpg",
 		"items":[
@@ -89,7 +89,7 @@
 	},
 	{
 		"title":"Imgurapp",
-		"description":[],
+		"description":["Imgurin selaussovellus","Kesä 2015"],
 		"tags":["AngularJS","Javascript","Mobiili","imgur"],
 		"thumbnail":"assets/portfolio/imgurapp-thumbnail.jpg",
 		"items":[

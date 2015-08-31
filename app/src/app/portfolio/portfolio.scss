@@ -14,6 +14,13 @@ $items: 6;
 		width: 100%;
 		height: 0;
 		padding-bottom: 100%;
+		opacity: 0.8;
+	}
+
+	&:hover{
+		.gallery-item-image{
+			opacity: 1;
+		}
 	}
 }
 
