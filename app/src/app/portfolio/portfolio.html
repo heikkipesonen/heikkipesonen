@@ -3,11 +3,12 @@
 
 		<section class="page-title text-center">
 			<h2 class="page-title-header text-uppercase">Portfolio</h2>
+			<icon-tags ng-model="portfolio.tags"></icon-tags>
 		</section>
 
 		<section class="image-gallery col-xs-12">
 
-			<div class="gallery-item col-xs-12 col-sm-4 col-md-3 col-lg-2" ng-repeat="(imageIndex, image) in portfolio.gallery track by imageIndex">
+			<div class="gallery-item" ng-repeat="(imageIndex, image) in portfolio.gallery track by imageIndex">
 
 				<div class="gallery-item-image" image-loader="::image.thumbnail">
 				</div>
@@ -17,6 +18,8 @@
 					<p class="item-description"
 						ng-repeat="(paragraphIndex, paragraph) in ::image.description track by paragraphIndex"
 						ng-bind="::paragraph"></p>
+
+					<icon-tags ng-model="image.tags"></icon-tags>
 				</div>
 			</div>
 		</section>
