@@ -1,11 +1,11 @@
-<div class="view" name="curriculum-vitae"  scroll-y image-loader="'assets/bg-blur-color.jpg'">
+<div class="view" name="curriculum-vitae"  scroll-y>
 	<div class="col-xs-12 page-wrapper">
 
 		<section class="page-title text-center col-xs-12">
 			<h2 class="page-title-header text-uppercase">Curriculum vitae</h2>
 		</section>
 
-		<section class="cv col-xs-12 col-md-10 col-lg-8 col-lg-offset-2 col-md-offset-1">
+		<section class="cv">
 			<ul class="big-list">
 				<li class="list-item"
 					ng-class="{'list-item-row-{{::listItem.type}}' : true}"
@@ -21,28 +21,25 @@
 							ng-bind="::description"></p>
 					</div>
 
+					<div class="list-item-content">
 
+						<div class="list-item-row"
+							ng-class="{'list-item-col-{{::item.length}}' : true}"
+							ng-repeat="(itemIndex, item) in ::listItem.items track by itemIndex">
+							<span
+								ng-if="listItem.type === 'list'"
+								class="list-item-{{listItemIndex+1}}"
+								ng-repeat="(listItemIndex, listRowItem) in ::item track by listItemIndex"
+								ng-bind="listRowItem"></span>
 
-					<div
-					class="list-item-content">
+							<circle-chart
+								ng-if="listItem.type === 'graph'"
+								class="graph-bar"
+								label="::item.name"
+								ng-model="item.value">
+							</circle-chart>
 
-					<div class="list-item-row"
-					ng-class="{'list-item-col-{{::item.length}}' : true}"
-					ng-repeat="(itemIndex, item) in ::listItem.items track by itemIndex">
-					<span
-						ng-if="listItem.type === 'list'"
-						class="list-item-{{listItemIndex+1}}"
-						ng-repeat="(listItemIndex, listRowItem) in ::item track by listItemIndex"
-						ng-bind="listRowItem"></span>
-
-					<circle-chart
-						ng-if="listItem.type === 'graph'"
-						class="graph-bar"
-						label="::item.name"
-						ng-model="item.value">
-					</circle-chart>
-
-					</div>
+						</div>
 
 					</div>
 				</li>

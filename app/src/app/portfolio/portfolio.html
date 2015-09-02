@@ -1,4 +1,4 @@
-<div class="view" scroll-y name="curriculum-vitae" image-loader="'assets/bg-blur-color.jpg'">
+<div class="view" name="portfolio" scroll-y name="curriculum-vitae">
 	<div class="col-xs-12 page-wrapper">
 
 		<section class="page-title text-center">
@@ -6,22 +6,8 @@
 			<icon-tags ng-model="portfolio.tags"></icon-tags>
 		</section>
 
-		<section class="image-gallery col-xs-12">
-
-			<div class="gallery-item" ng-repeat="(imageIndex, image) in portfolio.gallery track by imageIndex">
-
-				<div class="gallery-item-image" image-loader="::image.thumbnail">
-				</div>
-
-				<div class="gallery-item-text">
-					<h4 class="item-title" ng-bind="::image.title"></h4>
-					<p class="item-description"
-						ng-repeat="(paragraphIndex, paragraph) in ::image.description track by paragraphIndex"
-						ng-bind="::paragraph"></p>
-
-					<icon-tags ng-model="image.tags"></icon-tags>
-				</div>
-			</div>
+		<section>
+			<image-gallery ng-model="portfolio.gallery"></image-gallery>
 		</section>
 
 	</div>

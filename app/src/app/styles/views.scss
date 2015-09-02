@@ -6,28 +6,29 @@ $view-transition : 0.4s;
 	}
 
 
-	&.ng-animate .view{
+	&.ng-animate{
 		transition: $view-transition !important;
 	}
 
-	&.ng-enter .view{
+	&.ng-enter{
 		opacity:0 !important;
 		z-index: 2;
 	}
 
-	&.ng-enter-active .view{
+	&.ng-enter-active{
 		opacity:1 !important;
 	}
 
-	&.ng-leave-active .view{
-		opacity:1 !important;
+	&.ng-leave{
+		opacity: 1 !important;
 		z-index: 1;
 	}
 
-	&.ng-leave .view{
-		opacity:0 !important;
+	&.ng-leave-active{
+		opacity: 0 !important;
 		z-index: 1;
 	}
+
 }
 
 .animation-direction-back .view-animate{
